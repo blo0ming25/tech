@@ -1,0 +1,220 @@
+/* General Styles */
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Varela Round', sans-serif;
+}
+
+p {
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Navbar */
+#mainNav {
+  background-color: #1e293b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#mainNav .navbar-brand {
+  color: #f9fafb;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#mainNav .navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#mainNav .navbar-nav {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+#mainNav .nav-link {
+  color: #f9fafb;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+  font-size: 1.5rem; 
+}
+
+#mainNav .nav-link:hover {
+  color: #3b82f6;
+}
+
+/* Home Section */
+.masthead {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  color: #fff;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.masthead h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.masthead h2 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.masthead .btn-primary {
+  background-color: #3b82f6;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1rem;
+}
+
+.masthead .btn-primary:hover {
+  background-color: #2563eb;
+}
+
+/* About Section */
+.about-section {
+  background-color: #f3f4f6;
+  color: #1e293b;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about-section h2 {
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.about-section p {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+/* Services Section */
+#services {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#services h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+#services ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#services li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #475569;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #1e293b;
+  color: #f9fafb;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-section h4 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-section .form-control {
+  margin-bottom: 15px;
+  border-radius: 5px;
+  max-width: 600px;
+  width: 100%;
+  height: 50px;
+  font-size: 1.1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.contact-section textarea.form-control {
+  height: 150px;
+}
+
+.contact-section button {
+  background-color: #3b82f6;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+}
+
+.contact-section button:hover {
+  background-color: #2563eb;
+}
+
+.contact-section .container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footer {
+  background-color: #1e293b;
+  color: #cbd5e1;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .masthead h1 {
+    font-size: 2.5rem;
+  }
+
+  .masthead h2 {
+    font-size: 1rem;
+  }
+
+  #mainNav .nav-link {
+    margin: 5px 0;
+  }
+
+  #mainNav .navbar-collapse {
+    justify-content: flex-end;
+  }
+
+  .contact-section .form-control {
+    width: 90%;
+  }
+
+  .contact-section .container {
+    padding: 0 15px;
+  }
+}
